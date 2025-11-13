@@ -1,0 +1,33 @@
+# ---- Node / Next.js ----
+web/node_modules/
+web/.next/
+web/.vercel/
+web/.turbo/
+web/.DS_Store
+
+# ---- Python ----
+apps/api/.venv/
+**/__pycache__/
+apps/api/.pytest_cache/
+apps/api/.mypy_cache/
+
+# ---- Environments / secrets ----
+*.env
+apps/api/.env
+web/.env.local
+
+# ---- OS cruft ----
+.DS_Store
+Thumbs.db
+
+# ---- Docker volumes (we keep volumes external via compose) ----
+# (no project-local volumes to ignore here)
+
+# ---- Logs ----
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# ---- Editor settings (optional) ----
+.vscode/
+.idea/
